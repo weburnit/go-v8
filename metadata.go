@@ -1,4 +1,4 @@
-package jsexec
+package gov8
 
 import (
 	"github.com/project-flogo/core/data/coerce"
