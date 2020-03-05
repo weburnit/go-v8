@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  gov8:
+    ports:
+      - "8087:8087"
+    build:
+      context: .
+      args:
+        - service_name=volante
+    environment:
+      - CONFIG_STORAGE=http://consul-server-2:8500
+      - CONFIG_NAMESPACE=sakari/ares
+      - ENV=dev
+      - V8_VERSION=6.7-lkgr
